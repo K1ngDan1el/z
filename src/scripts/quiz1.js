@@ -1,7 +1,7 @@
 /* src/scripts/quiz1.js (Con Pistas, Sonidos y Música de Fondo Única) */
 
 // --- CONFIGURACIÓN DEL TIMER ---
-const TOTAL_TIME_SECONDS = 120; // 5 minutos
+const TOTAL_TIME_SECONDS = 120; // 2 minutos <-- ¡CAMBIO REVERTIDO!
 const HINTS_UNLOCK_TIME = TOTAL_TIME_SECONDS / 2;
 // -----------------------------
 
@@ -37,11 +37,11 @@ const soundTimeUp = new Audio('/Sounds/tiempo-fuera.mp3');
 const soundWarning = new Audio('/Sounds/advertencia.mp3');
 
 // === MÚSICA DE FONDO: Carga el archivo ===
-const musicBackground = new Audio('/Sounds/musica-fondo.mp3'); // <-- CAMBIA 'musica-fondo.mp3' si tu archivo se llama diferente
-musicBackground.loop = false; // <-- No está en loop
-musicBackground.volume = 0.5; // Opcional: ajusta el volumen (0.0 a 1.0)
+const musicBackground = new Audio('/Sounds/musica-fondo.mp3'); 
+musicBackground.loop = false;
+musicBackground.volume = 0.5;
 
-let isMusicStarted = false; // Controla si la música ya empezó
+let isMusicStarted = false; 
 // === FIN: AÑADIR SONIDOS ===
 
 
@@ -53,7 +53,6 @@ const answers = {
   q16: 'b', q17: 'b', q18: 'b', q19: 'b', q20: 'b'
 };
 
-let totalAnswered = 0;
 let score = 0;
 const totalQuestions = Object.keys(answers).length;
 const resultDiv = document.getElementById('result');
@@ -61,9 +60,12 @@ const resetBtn = document.getElementById('reset-btn');
 const nextBtn = document.getElementById('next-btn');
 const quizContainer = document.getElementById('quiz-container');
 const allOptions = document.querySelectorAll('.option');
+const allQuestions = document.querySelectorAll('.question');
+let currentQuestionIndex = 0; 
 
 // --- Elementos del Timer ---
 const timerBar = document.getElementById('timer-bar');
+const timerBarDelay = document.getElementById('timer-bar-delay'); // <-- ¡NUEVO!
 const timerText = document.getElementById('timer-text');
 let timeLeft = TOTAL_TIME_SECONDS;
 let timerInterval = null;
@@ -73,17 +75,33 @@ let hintsUnlocked = false;
 function startTimer() {
   timeLeft = TOTAL_TIME_SECONDS;
   hintsUnlocked = false;
-  isMusicStarted = false; // <--- CAMBIO: Resetea el control de la música
+  isMusicStarted = false; 
+  currentQuestionIndex = 0;
   if (timerInterval) clearInterval(timerInterval);
-  updateTimerDisplay();
+  updateTimerDisplay(); // Llama una vez para setear el 100% inicial
   checkTimeEffects();
+  showQuestion(currentQuestionIndex);
+
+  // Setea el estado inicial de las barras sin transición
+  if (timerBar) timerBar.style.transition = 'none';
+  if (timerBarDelay) timerBarDelay.style.transition = 'none';
+  updateTimerDisplay();
+
+  // Forzamos un reflow para que la próxima transición sí ocurra
+  void timerBar.offsetWidth;
+  void timerBarDelay.offsetWidth;
+  
+  // Reactivamos las transiciones
+  if (timerBar) timerBar.style.transition = 'background-color 0.5s ease';
+  if (timerBarDelay) timerBarDelay.style.transition = 'width 0.5s linear';
+
 
   timerInterval = setInterval(() => {
     timeLeft--;
     updateTimerDisplay();
     checkTimeEffects();
 
-    // === MÚSICA DE FONDO: Inicia a los 120 segundos ===
+    // === MÚSICA DE FONDO: Inicia a los 85 segundos ===
     if (timeLeft === 85 && !isMusicStarted) {
         musicBackground.play().catch(e => console.error("Error al iniciar música:", e));
         isMusicStarted = true;
@@ -106,9 +124,11 @@ function stopTimer() {
 }
 
 function updateTimerDisplay() {
-  if (!timerBar || !timerText) return;
+  if (!timerBar || !timerText || !timerBarDelay) return; // <-- ¡NUEVO!
   const percentage = (timeLeft / TOTAL_TIME_SECONDS) * 100;
-  timerBar.style.width = percentage + '%';
+  
+  timerBar.style.width = percentage + '%'; // Barra verde (actualiza rápido)
+  timerBarDelay.style.width = percentage + '%'; // Barra blanca (sigue con delay por CSS)
 
   const minutes = Math.floor(timeLeft / 60);
   const seconds = timeLeft % 60;
@@ -138,6 +158,17 @@ function checkTimeEffects() {
     quizContainer.classList.remove('timer-warning', 'timer-danger');
     if (timerBar) timerBar.style.background = 'linear-gradient(90deg, #28a745, #5cdd7c)';
   }
+}
+
+// --- FUNCIÓN PARA MOSTRAR PREGUNTA ---
+function showQuestion(index) {
+  allQuestions.forEach((question, i) => {
+    if (i === index) {
+      question.classList.remove('hidden');
+    } else {
+      question.classList.add('hidden');
+    }
+  });
 }
 
 // --- FUNCIÓN DE PISTAS (Modificada) ---
@@ -182,23 +213,27 @@ function checkAnswer(questionName, selectedValue, optionElement) {
   const correctAnswer = answers[questionName];
   const questionOptions = document.querySelectorAll(`[data-question="${questionName}"]`);
   
+  // Deshabilita opciones de la pregunta actual
   questionOptions.forEach(opt => {
     opt.classList.add('disabled');
     opt.style.pointerEvents = 'none';
   });
   
+  // Muestra la respuesta correcta
   questionOptions.forEach(opt => {
     if (opt.dataset.value === correctAnswer) {
       opt.classList.add('correct');
     }
   });
 
+  // Deshabilita el botón de pista
   const hintBtn = optionElement.closest('.question').querySelector('.hint-btn');
   if (hintBtn) {
     hintBtn.disabled = true;
     hintBtn.classList.remove('unlocked');
   }
   
+  // Marca incorrecta si es necesario y actualiza score
   if (selectedValue !== correctAnswer) {
     optionElement.classList.add('incorrect');
     soundIncorrect.play();
@@ -207,11 +242,17 @@ function checkAnswer(questionName, selectedValue, optionElement) {
     soundCorrect.play();
   }
   
-  totalAnswered++;
-  
-  if (totalAnswered === totalQuestions) {
-    showFinalResult(false);
-  }
+  // --- LÓGICA DE AVANCE AUTOMÁTICO ---
+  // Espera 1 segundo (1000ms) antes de pasar a la siguiente
+  setTimeout(() => {
+    currentQuestionIndex++; // Avanza a la siguiente pregunta
+    
+    if (currentQuestionIndex < totalQuestions) {
+      showQuestion(currentQuestionIndex); // Muestra la siguiente pregunta
+    } else {
+      showFinalResult(false); // Si no hay más, muestra el resultado
+    }
+  }, 1000); 
 }
 
 function showFinalResult(isTimeUp) {
@@ -275,7 +316,6 @@ function resetQuiz() {
   isMusicStarted = false; // Se prepara para el próximo inicio en 120s
   // === FIN: Reseteo de música ===
 
-  totalAnswered = 0;
   score = 0;
   
   if (nextBtn) nextBtn.disabled = false;
@@ -336,8 +376,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
   document.querySelectorAll('.hint-btn').forEach(btn => {
     btn.addEventListener('click', showHint);
   });
-
-  // CAMBIO: Ya no se inicia la música aquí, se inicia en el timer
   
   startTimer();
 });

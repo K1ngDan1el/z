@@ -3,7 +3,7 @@
   @plugin "@midudev/tailwind-animations";
 */
 
-/* === 2. DISEÑO GENERAL DEL QUIZ === */
+/* === 2. DISEÑO GENERAL DEL QUIZ (MODIFICADO) === */
 * {
   margin: 0;
   padding: 0;
@@ -25,25 +25,54 @@ h1 {
 }
 
 #quiz-container {
-  background: rgba(241, 241, 241, 0.95);
+  /* --- ¡FONDO ANIMADO CON COLORES MÁS BLANCOS! --- */
+  /* Colores más claros: un rosa pálido, durazno claro, y amarillo pálido */
+  background: linear-gradient(-45deg, #d4a0a0, #e9b0a0, #fcd0a0, #fffde0);
+  background-size: 400% 400%; /* Hacemos el degradado enorme */
+  animation: moveGradient 20s ease infinite; /* 20s para un movimiento "suave" */
+  /* ------------------------------- */
+
   border-radius: 0;
   padding: 40px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   animation: fadeInUp 0.8s ease;
 }
 
-/* === 3. PREGUNTAS Y OPCIONES === */
+/* === 3. PREGUNTAS Y OPCIONES (Estilo Sci-Fi) === */
 .question {
   position: relative; /* Para posicionar el botón de pista */
   margin-bottom: 35px;
-  padding: 25px;
-  background: #ffffff;
-  border-left: 5px solid #b47b00;
+  
+  /* --- ESTILO SCI-FI --- */
+  background: linear-gradient(135deg, #b47b00, #ffae00); /* Fondo degradado (borde) */
+  padding: 5px; /* Ancho del "borde" */
+  clip-path: polygon(
+    0% 20px,       /* Esquina superior izquierda (corte) */
+    20px 0%,      /* ... */
+    100% 0%,      /* Esquina superior derecha */
+    100% calc(100% - 20px), /* Esquina inferior derecha (corte) */
+    calc(100% - 20px) 100%, /* ... */
+    0% 100%       /* Esquina inferior izquierda */
+  );
   transition: transform 0.3s ease;
 }
 
+/* Contenedor interno para el fondo blanco */
+.question-inner {
+  background: #ffffff;
+  padding: 25px;
+  clip-path: polygon(
+    0% 17px,       /* Corte interno, ligeramente más pequeño */
+    17px 0%,      
+    100% 0%,      
+    100% calc(100% - 17px), 
+    calc(100% - 17px) 100%, 
+    0% 100%       
+  );
+}
+
 .question:hover {
-  transform: translateX(5px);
+  transform: scale(1.01); /* Efecto sutil de hover */
 }
 
 .question p {
@@ -126,15 +155,27 @@ h1 {
   opacity: 0.7;
 }
 
-/* === 5. SECCIÓN DEL TEMPORIZADOR === */
+/* === 5. SECCIÓN DEL TEMPORIZADOR (MODIFICADO) === */
 .progress-bar {
-  position: relative;
+  position: relative; /* Contenedor padre para las barras absolutas */
   width: 100%;
   height: 30px;
-  background: #4731007e;
-  border-radius: 0;
+  background: #4731007e; /* Color de fondo de la barra */
   margin-bottom: 30px;
-  overflow: hidden;
+  overflow: hidden; 
+  
+  /* --- ESTILO PIXELADO SCI-FI --- */
+  border-radius: 0; 
+  clip-path: polygon(
+    0% 10px,   /* Corte de 10px */
+    10px 0%,  
+    calc(100% - 10px) 0%, 
+    100% 10px, 
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    10px 100%,
+    0% calc(100% - 10px)
+  );
 }
 
 #timer-text {
@@ -146,17 +187,45 @@ h1 {
   font-weight: bold;
   color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  z-index: 2;
+  z-index: 3; /* Encima de ambas barras */
 }
 
+/* Barra blanca de retraso (detrás) */
+.progress-fill-delay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #ffffff; /* Esta es tu "línea blanca" */
+  width: 100%;
+  transition: width 0.5s linear; /* <-- Esta es la clave del DELAY */
+  z-index: 1; /* Detrás de la verde */
+  
+  /* Mismo clip-path que el padre */
+  clip-path: polygon(
+    0% 10px, 10px 0%, calc(100% - 10px) 0%, 100% 10px, 
+    100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0% calc(100% - 10px)
+  );
+}
+
+/* Barra verde principal (delante) */
 .progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   background: linear-gradient(90deg, #28a745, #5cdd7c);
   width: 100%;
-  transition: width 0.5s linear, background-color 0.5s ease;
-  border-radius: 0;
-  z-index: 1;
+  transition: background-color 0.5s ease;
+  z-index: 2; /* Encima de la blanca */
+
+  /* Mismo clip-path que el padre */
+  clip-path: polygon(
+    0% 10px, 10px 0%, calc(100% - 10px) 0%, 100% 10px, 
+    100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0% calc(100% - 10px)
+  );
 }
+
 
 /* === 6. SECCIÓN DE PISTAS (HINT) === */
 .hint-btn {
@@ -407,4 +476,17 @@ h1 {
   .question {
     padding: 15px;
   }
+}
+
+/* === 11. CLASE PARA OCULTAR PREGUNTAS (¡IMPORTANTE!) === */
+/* Esta clase la usa quiz1.js para mostrar una pregunta a la vez */
+.question.hidden {
+  display: none;
+}
+
+/* === 12. ANIMACIÓN DE FONDO === */
+@keyframes moveGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }

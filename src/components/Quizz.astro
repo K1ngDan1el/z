@@ -4,370 +4,411 @@
     <div id="quiz-container">
       
       <div class="progress-bar">
-        <span id="timer-text">5:00</span>
+        <span id="timer-text">2:00</span>
+        <div class="progress-fill-delay" id="timer-bar-delay"></div>
         <div class="progress-fill" id="timer-bar"></div>
       </div>
       
       <form id="quiz-form">
 
         <div class="question">
-          <p><span class="question-number">1</span>¿Qué se entiende por “discurso”?</p>
-          <label class="option" data-question="q1" data-value="a">
-            <input type="radio" name="q1" value="a">
-            <span class="option-content">Un listado de instrucciones.</span>
-          </label>
-          <label class="option" data-question="q1" data-value="b">
-            <input type="radio" name="q1" value="b">
-            <span class="option-content">Una conversación privada.</span>
-          </label>
-          <label class="option" data-question="q1" data-value="c">
-            <input type="radio" name="q1" value="c">
-            <span class="option-content">Un enunciado con intención comunicativa.</span>
-          </label>
-          <button class="hint-btn" data-hint="q1" disabled>💡</button>
-          <p class="hint-text" id="hint-q1"></p>
+          <div class="question-inner">
+            <p><span class="question-number">1</span>¿Qué se entiende por “discurso”?</p>
+            <label class="option" data-question="q1" data-value="a">
+              <input type="radio" name="q1" value="a">
+              <span class="option-content">Un listado de instrucciones.</span>
+            </label>
+            <label class="option" data-question="q1" data-value="b">
+              <input type="radio" name="q1" value="b">
+              <span class="option-content">Una conversación privada.</span>
+            </label>
+            <label class="option" data-question="q1" data-value="c">
+              <input type="radio" name="q1" value="c">
+              <span class="option-content">Un enunciado con intención comunicativa.</span>
+            </label>
+            <button class="hint-btn" data-hint="q1" disabled>💡</button>
+            <p class="hint-text" id="hint-q1"></p>
+          </div>
         </div>
 
         <div class="question">
-          <p><span class="question-number">2</span>Menciona tres fines principales de un discurso.</p>
-          <label class="option" data-question="q2" data-value="a">
-            <input type="radio" name="q2" value="a">
-            <span class="option-content">Recitar, improvisar, silenciar.</span>
-          </label>
-          <label class="option" data-question="q2" data-value="b">
-            <input type="radio" name="q2" value="b">
-            <span class="option-content">Social, informativo, persuasivo.</span>
-          </label>
-          <label class="option" data-question="q2" data-value="c">
-            <input type="radio" name="q2" value="c">
-            <span class="option-content">Escribir, leer, olvidar.</span>
-          </label>
-          <button class="hint-btn" data-hint="q2" disabled>💡</button>
-          <p class="hint-text" id="hint-q2"></p>
+          <div class="question-inner">
+            <p><span class="question-number">2</span>Menciona tres fines principales de un discurso.</p>
+            <label class="option" data-question="q2" data-value="a">
+              <input type="radio" name="q2" value="a">
+              <span class="option-content">Recitar, improvisar, silenciar.</span>
+            </label>
+            <label class="option" data-question="q2" data-value="b">
+              <input type="radio" name="q2" value="b">
+              <span class="option-content">Social, informativo, persuasivo.</span>
+            </label>
+            <label class="option" data-question="q2" data-value="c">
+              <input type="radio" name="q2" value="c">
+              <span class="option-content">Escribir, leer, olvidar.</span>
+            </label>
+            <button class="hint-btn" data-hint="q2" disabled>💡</button>
+            <p class="hint-text" id="hint-q2"></p>
+          </div>
         </div>
 
         <div class="question">
-          <p><span class="question-number">3</span>¿Cuáles son las tres partes básicas de la estructura de un discurso?</p>
-          <label class="option" data-question="q3" data-value="a">
-            <input type="radio" name="q3" value="a">
-            <span class="option-content">Inicio, mitad, final.</span>
-          </label>
-          <label class="option" data-question="q3" data-value="b">
-            <input type="radio" name="q3" value="b">
-            <span class="option-content">Presentación, ejemplos, preguntas.</span>
-          </label>
-          <label class="option" data-question="q3" data-value="c">
-            <input type="radio" name="q3" value="c">
-            <span class="option-content">Introducción, desarrollo, conclusión.</span>
-          </label>
-          <button class="hint-btn" data-hint="q3" disabled>💡</button>
-          <p class="hint-text" id="hint-q3"></p>
+          <div class="question-inner">
+            <p><span class="question-number">3</span>¿Cuáles son las tres partes básicas de la estructura de un discurso?</p>
+            <label class="option" data-question="q3" data-value="a">
+              <input type="radio" name="q3" value="a">
+              <span class="option-content">Inicio, mitad, final.</span>
+            </label>
+            <label class="option" data-question="q3" data-value="b">
+              <input type="radio" name="q3" value="b">
+              <span class="option-content">Presentación, ejemplos, preguntas.</span>
+            </label>
+            <label class="option" data-question="q3" data-value="c">
+              <input type="radio" name="q3" value="c">
+              <span class="option-content">Introducción, desarrollo, conclusión.</span>
+            </label>
+            <button class="hint-btn" data-hint="q3" disabled>💡</button>
+            <p class="hint-text" id="hint-q3"></p>
+          </div>
         </div>
 
         <div class="question">
-          <p><span class="question-number">4</span>Da dos técnicas efectivas para captar la atención en la introducción.</p>
-          <label class="option" data-question="q4" data-value="a">
-            <input type="radio" name="q4" value="a">
-            <span class="option-content">Leer un índice y enumerar.</span>
-          </label>
-          <label class="option" data-question="q4" data-value="b">
-            <input type="radio" name="q4" value="b">
-            <span class="option-content">Contar una anécdota y hacer una pregunta retórica.</span>
-          </label>
-          <label class="option" data-question="q4" data-value="c">
-            <input type="radio" name="q4" value="c">
-            <span class="option-content">Hablar en voz baja y mirar al techo.</span>
-          </label>
-          <button class="hint-btn" data-hint="q4" disabled>💡</button>
-          <p class="hint-text" id="hint-q4"></p>
+          <div class="question-inner">
+            <p><span class="question-number">4</span>Da dos técnicas efectivas para captar la atención en la introducción.</p>
+            <label class="option" data-question="q4" data-value="a">
+              <input type="radio" name="q4" value="a">
+              <span class="option-content">Leer un índice y enumerar.</span>
+            </label>
+            <label class="option" data-question="q4" data-value="b">
+              <input type="radio" name="q4" value="b">
+              <span class="option-content">Contar una anécdota y hacer una pregunta retórica.</span>
+            </label>
+            <label class="option" data-question="q4" data-value="c">
+              <input type="radio" name="q4" value="c">
+              <span class="option-content">Hablar en voz baja y mirar al techo.</span>
+            </label>
+            <button class="hint-btn" data-hint="q4" disabled>💡</button>
+            <p class="hint-text" id="hint-q4"></p>
+          </div>
         </div>
 
         <div class="question">
-          <p><span class="question-number">5</span>¿Qué es la “experiencia vicaria”?</p>
-          <label class="option" data-question="q5" data-value="a">
-            <input type="radio" name="q5" value="a">
-            <span class="option-content">Explicar procesos largos.</span>
-          </label>
-          <label class="option" data-question="q5" data-value="b">
-            <input type="radio" name="q5" value="b">
-            <span class="option-content">Hacer que la audiencia imagine sensaciones.</span>
-          </label>
-          <label class="option" data-question="q5" data-value="c">
-            <input type="radio" name="q5" value="c">
-            <span class="option-content">Repetir citas textuales.</span>
-          </label>
-          <button class="hint-btn" data-hint="q5" disabled>💡</button>
-          <p class="hint-text" id="hint-q5"></p>
+          <div class="question-inner">
+            <p><span class="question-number">5</span>¿Qué es la “experiencia vicaria”?</p>
+            <label class="option" data-question="q5" data-value="a">
+              <input type="radio" name="q5" value="a">
+              <span class="option-content">Explicar procesos largos.</span>
+            </label>
+            <label class="option" data-question="q5" data-value="b">
+              <input type="radio" name="q5" value="b">
+              <span class="option-content">Hacer que la audiencia imagine sensaciones.</span>
+            </label>
+            <label class="option" data-question="q5" data-value="c">
+              <input type="radio" name="q5" value="c">
+              <span class="option-content">Repetir citas textuales.</span>
+            </label>
+            <button class="hint-btn" data-hint="q5" disabled>💡</button>
+            <p class="hint-text" id="hint-q5"></p>
+          </div>
         </div>
 
         <div class="question">
-          <p><span class="question-number">6</span>Verdadero o falso: un discurso informativo debe priorizar la objetividad.</p>
-          <label class="option" data-question="q6" data-value="a">
-            <input type="radio" name="q6" value="a">
-            <span class="option-content">Falso.</span>
-          </label>
-          <label class="option" data-question="q6" data-value="b">
-            <input type="radio" name="q6" value="b">
-            <span class="option-content">Verdadero.</span>
-          </label>
-          <label class="option" data-question="q6" data-value="c">
-            <input type="radio" name="q6" value="c">
-            <span class="option-content">Siempre persuasivo.</span>
-          </label>
-          <button class="hint-btn" data-hint="q6" disabled>💡</button>
-          <p class="hint-text" id="hint-q6"></p>
+          <div class="question-inner">
+            <p><span class="question-number">6</span>Verdadero o falso: un discurso informativo debe priorizar la objetividad.</p>
+            <label class="option" data-question="q6" data-value="a">
+              <input type="radio" name="q6" value="a">
+              <span class="option-content">Falso.</span>
+            </label>
+            <label class="option" data-question="q6" data-value="b">
+              <input type="radio" name="q6" value="b">
+              <span class="option-content">Verdadero.</span>
+            </label>
+            <label class="option" data-question="q6" data-value="c">
+              <input type="radio" name="q6" value="c">
+              <span class="option-content">Siempre persuasivo.</span>
+            </label>
+            <button class="hint-btn" data-hint="q6" disabled>💡</button>
+            <p class="hint-text" id="hint-q6"></p>
+          </div>
+        </div>
+        
+        <div class="question">
+          <div class="question-inner">
+            <p><span class="question-number">7</span>¿Cuál es el orden de la secuencia motivadora de Monroe?</p>
+            <label class="option" data-question="q7" data-value="a">
+              <input type="radio" name="q7" value="a">
+              <span class="option-content">Necesidad → Acción → Atención → Visualización → Satisfacción.</span>
+            </label>
+            <label class="option" data-question="q7" data-value="b">
+              <input type="radio" name="q7" value="b">
+              <span class="option-content">Atención → Necesidad → Satisfacción → Visualización → Acción.</span>
+            </label>
+            <label class="option" data-question="q7" data-value="c">
+              <input type="radio" name="q7" value="c">
+              <span class="option-content">Acción → Atención → Satisfacción → Necesidad → Visualización.</span>
+            </label>
+            <button class="hint-btn" data-hint="q7" disabled>💡</button>
+            <p class="hint-text" id="hint-q7"></p>
+          </div>
         </div>
 
         <div class="question">
-          <p><span class="question-number">7</span>¿Cuál es el orden de la secuencia motivadora de Monroe?</p>
-          <label class="option" data-question="q7" data-value="a">
-            <input type="radio" name="q7" value="a">
-            <span class="option-content">Necesidad → Acción → Atención → Visualización → Satisfacción.</span>
-          </label>
-          <label class="option" data-question="q7" data-value="b">
-            <input type="radio" name="q7" value="b">
-            <span class="option-content">Atención → Necesidad → Satisfacción → Visualización → Acción.</span>
-          </label>
-          <label class="option" data-question="q7" data-value="c">
-            <input type="radio" name="q7" value="c">
-            <span class="option-content">Acción → Atención → Satisfacción → Necesidad → Visualización.</span>
-          </label>
-          <button class="hint-btn" data-hint="q7" disabled>💡</button>
-          <p class="hint-text" id="hint-q7"></p>
+          <div class="question-inner">
+            <p><span class="question-number">8</span>¿Qué elementos debes analizar sobre el público?</p>
+            <label class="option" data-question="q8" data-value="a">
+              <input type="radio" name="q8" value="a">
+              <span class="option-content">Solo su edad.</span>
+            </label>
+            <label class="option" data-question="q8" data-value="b">
+              <input type="radio" name="q8" value="b">
+              <span class="option-content">Demografía, conocimiento, actitudes.</span>
+            </label>
+            <label class="option" data-question="q8" data-value="c">
+              <input type="radio" name="q8" value="c">
+              <span class="option-content">El color de su ropa.</span>
+            </label>
+            <button class="hint-btn" data-hint="q8" disabled>💡</button>
+            <p class="hint-text" id="hint-q8"></p>
+          </div>
         </div>
 
         <div class="question">
-          <p><span class="question-number">8</span>¿Qué elementos debes analizar sobre el público?</p>
-          <label class="option" data-question="q8" data-value="a">
-            <input type="radio" name="q8" value="a">
-            <span class="option-content">Solo su edad.</span>
-          </label>
-          <label class="option" data-question="q8" data-value="b">
-            <input type="radio" name="q8" value="b">
-            <span class="option-content">Demografía, conocimiento, actitudes.</span>
-          </label>
-          <label class="option" data-question="q8" data-value="c">
-            <input type="radio" name="q8" value="c">
-            <span class="option-content">El color de su ropa.</span>
-          </label>
-          <button class="hint-btn" data-hint="q8" disabled>💡</button>
-          <p class="hint-text" id="hint-q8"></p>
+          <div class="question-inner">
+            <p><span class="question-number">9</span>Nombra un tipo de discurso para “ocasiones especiales”.</p>
+            <label class="option" data-question="q9" data-value="a">
+              <input type="radio" name="q9" value="a">
+              <span class="option-content">Instructivo técnico.</span>
+            </label>
+            <label class="option" data-question="q9" data-value="b">
+              <input type="radio" name="q9" value="b">
+              <span class="option-content">Elogio.</span>
+            </label>
+            <label class="option" data-question="q9" data-value="c">
+              <input type="radio" name="q9" value="c">
+              <span class="option-content">Informe contable.</span>
+            </label>
+            <button class="hint-btn" data-hint="q9" disabled>💡</button>
+            <p class="hint-text" id="hint-q9"></p>
+          </div>
         </div>
 
         <div class="question">
-          <p><span class="question-number">9</span>Nombra un tipo de discurso para “ocasiones especiales”.</p>
-          <label class="option" data-question="q9" data-value="a">
-            <input type="radio" name="q9" value="a">
-            <span class="option-content">Instructivo técnico.</span>
-          </label>
-          <label class="option" data-question="q9" data-value="b">
-            <input type="radio" name="q9" value="b">
-            <span class="option-content">Elogio.</span>
-          </label>
-          <label class="option" data-question="q9" data-value="c">
-            <input type="radio" name="q9" value="c">
-            <span class="option-content">Informe contable.</span>
-          </label>
-          <button class="hint-btn" data-hint="q9" disabled>💡</button>
-          <p class="hint-text" id="hint-q9"></p>
+          <div class="question-inner">
+            <p><span class="question-number">10</span>¿Diferencia principal entre persuasivo e informativo?</p>
+            <label class="option" data-question="q10" data-value="a">
+              <input type="radio" name="q10" value="a">
+              <span class="option-content">El persuasivo busca convencer; el informativo busca informar.</span>
+            </label>
+            <label class="option" data-question="q10" data-value="b">
+              <input type="radio" name="q10" value="b">
+              <span class="option-content">El informativo es siempre más corto.</span>
+            </label>
+            <label class="option" data-question="q10" data-value="c">
+              <input type="radio" name="q10" value="c">
+              <span class="option-content">No hay diferencia.</span>
+            </label>
+            <button class="hint-btn" data-hint="q10" disabled>💡</button>
+            <p class="hint-text" id="hint-q10"></p>
+          </div>
         </div>
 
         <div class="question">
-          <p><span class="question-number">10</span>¿Diferencia principal entre persuasivo e informativo?</p>
-          <label class="option" data-question="q10" data-value="a">
-            <input type="radio" name="q10" value="a">
-            <span class="option-content">El persuasivo busca convencer; el informativo busca informar.</span>
-          </label>
-          <label class="option" data-question="q10" data-value="b">
-            <input type="radio" name="q10" value="b">
-            <span class="option-content">El informativo es siempre más corto.</span>
-          </label>
-          <label class="option" data-question="q10" data-value="c">
-            <input type="radio" name="q10" value="c">
-            <span class="option-content">No hay diferencia.</span>
-          </label>
-          <button class="hint-btn" data-hint="q10" disabled>💡</button>
-          <p class="hint-text" id="hint-q10"></p>
+          <div class="question-inner">
+            <p><span class="question-number">11</span>Ejemplo de gancho para entretenimiento:</p>
+            <label class="option" data-question="q11" data-value="a">
+              <input type="radio" name="q11" value="a">
+              <span class="option-content">“Aquí van mis diapositivas.”</span>
+            </label>
+            <label class="option" data-question="q11" data-value="b">
+              <input type="radio" name="q11" value="b">
+              <span class="option-content">“¿Se acuerdan de la vez que todo salió mal…?”</span>
+            </label>
+            <label class="option" data-question="q11" data-value="c">
+              <input type="radio" name="q11" value="c">
+              <span class="option-content">“Lista de referencias al final.”</span>
+            </label>
+            <button class="hint-btn" data-hint="q11" disabled>💡</button>
+            <p class="hint-text" id="hint-q11"></p>
+          </div>
         </div>
 
         <div class="question">
-          <p><span class="question-number">11</span>Ejemplo de gancho para entretenimiento:</p>
-          <label class="option" data-question="q11" data-value="a">
-            <input type="radio" name="q11" value="a">
-            <span class="option-content">“Aquí van mis diapositivas.”</span>
-          </label>
-          <label class="option" data-question="q11" data-value="b">
-            <input type="radio" name="q11" value="b">
-            <span class="option-content">“¿Se acuerdan de la vez que todo salió mal…?”</span>
-          </label>
-          <label class="option" data-question="q11" data-value="c">
-            <input type="radio" name="q11" value="c">
-            <span class="option-content">“Lista de referencias al final.”</span>
-          </label>
-          <button class="hint-btn" data-hint="q11" disabled>💡</button>
-          <p class="hint-text" id="hint-q11"></p>
+          <div class="question-inner">
+            <p><span class="question-number">12</span>¿Qué papel tiene la ética en la persuasión?</p>
+            <label class="option" data-question="q12" data-value="a">
+              <input type="radio" name="q12" value="a">
+              <span class="option-content">Permite manipular con eficacia.</span>
+            </label>
+            <label class="option" data-question="q12" data-value="b">
+              <input type="radio" name="q12" value="b">
+              <span class="option-content">Obliga a ser honesto y responsable.</span>
+            </label>
+            <label class="option" data-question="q12" data-value="c">
+              <input type="radio" name="q12" value="c">
+              <span class="option-content">Se ignora siempre.</span>
+            </label>
+            <button class="hint-btn" data-hint="q12" disabled>💡</button>
+            <p class="hint-text" id="hint-q12"></p>
+          </div>
         </div>
 
         <div class="question">
-          <p><span class="question-number">12</span>¿Qué papel tiene la ética en la persuasión?</p>
-          <label class="option" data-question="q12" data-value="a">
-            <input type="radio" name="q12" value="a">
-            <span class="option-content">Permite manipular con eficacia.</span>
-          </label>
-          <label class="option" data-question="q12" data-value="b">
-            <input type="radio" name="q12" value="b">
-            <span class="option-content">Obliga a ser honesto y responsable.</span>
-          </label>
-          <label class="option" data-question="q12" data-value="c">
-            <input type="radio" name="q12" value="c">
-            <span class="option-content">Se ignora siempre.</span>
-          </label>
-          <button class="hint-btn" data-hint="q12" disabled>💡</button>
-          <p class="hint-text" id="hint-q12"></p>
+          <div class="question-inner">
+            <p><span class="question-number">13</span>Verdadero o falso: la improvisación no necesita preparación.</p>
+            <label class="option" data-question="q13" data-value="a">
+              <input type="radio" name="q13" value="a">
+              <span class="option-content">Verdadero.</span>
+            </label>
+            <label class="option" data-question="q13" data-value="b">
+              <input type="radio" name="q13" value="b">
+              <span class="option-content">Falso.</span>
+            </label>
+            <label class="option" data-question="q13" data-value="c">
+              <input type="radio" name="q13" value="c">
+              <span class="option-content">Solo si hay micrófono.</span>
+            </label>
+            <button class="hint-btn" data-hint="q13" disabled>💡</button>
+            <p class="hint-text" id="hint-q13"></p>
+          </div>
         </div>
 
         <div class="question">
-          <p><span class="question-number">13</span>Verdadero o falso: la improvisación no necesita preparación.</p>
-          <label class="option" data-question="q13" data-value="a">
-            <input type="radio" name="q13" value="a">
-            <span class="option-content">Verdadero.</span>
-          </label>
-          <label class="option" data-question="q13" data-value="b">
-            <input type="radio" name="q13" value="b">
-            <span class="option-content">Falso.</span>
-          </label>
-          <label class="option" data-question="q13" data-value="c">
-            <input type="radio" name="q13" value="c">
-            <span class="option-content">Solo si hay micrófono.</span>
-          </label>
-          <button class="hint-btn" data-hint="q13" disabled>💡</button>
-          <p class="hint-text" id="hint-q13"></p>
+          <div class="question-inner">
+            <p><span class="question-number">14</span>Menciona una consideración logística a revisar antes de dar un discurso.</p>
+            <label class="option" data-question="q14" data-value="a">
+              <input type="radio" name="q14" value="a">
+              <span class="option-content">El menú del almuerzo.</span>
+            </label>
+            <label class="option" data-question="q14" data-value="b">
+              <input type="radio" name="q14" value="b">
+              <span class="option-content">Equipo técnico (micrófono/proyector).</span>
+            </label>
+            <label class="option" data-question="q14" data-value="c">
+              <input type="radio" name="q14" value="c">
+              <span class="option-content">La lista de invitados.</span>
+            </label>
+            <button class="hint-btn" data-hint="q14" disabled>💡</button>
+            <p class="hint-text" id="hint-q14"></p>
+          </div>
         </div>
 
         <div class="question">
-          <p><span class="question-number">14</span>Menciona una consideración logística a revisar antes de dar un discurso.</p>
-          <label class="option" data-question="q14" data-value="a">
-            <input type="radio" name="q14" value="a">
-            <span class="option-content">El menú del almuerzo.</span>
-          </label>
-          <label class="option" data-question="q14" data-value="b">
-            <input type="radio" name="q14" value="b">
-            <span class="option-content">Equipo técnico (micrófono/proyector).</span>
-          </label>
-          <label class="option" data-question="q14" data-value="c">
-            <input type="radio" name="q14" value="c">
-            <span class="option-content">La lista de invitados.</span>
-          </label>
-          <button class="hint-btn" data-hint="q14" disabled>💡</button>
-          <p class="hint-text" id="hint-q14"></p>
+          <div class="question-inner">
+            <p><span class="question-number">15</span>¿Por qué crear imágenes verbales?</p>
+            <label class="option" data-question="q15" data-value="a">
+              <input type="radio" name="q15" value="a">
+              <span class="option-content">Para alargar el discurso.</span>
+            </label>
+            <label class="option" data-question="q15" data-value="b">
+              <input type="radio" name="q15" value="b">
+              <span class="option-content">Para aumentar conexión y recuerdo.</span>
+            </label>
+            <label class="option" data-question="q15" data-value="c">
+              <input type="radio" name="q15" value="c">
+              <span class="option-content">Para confundir al público.</span>
+            </label>
+            <button class="hint-btn" data-hint="q15" disabled>💡</button>
+            <p class="hint-text" id="hint-q15"></p>
+          </div>
         </div>
 
         <div class="question">
-          <p><span class="question-number">15</span>¿Por qué crear imágenes verbales?</p>
-          <label class="option" data-question="q15" data-value="a">
-            <input type="radio" name="q15" value="a">
-            <span class="option-content">Para alargar el discurso.</span>
-          </label>
-          <label class="option" data-question="q15" data-value="b">
-            <input type="radio" name="q15" value="b">
-            <span class="option-content">Para aumentar conexión y recuerdo.</span>
-          </label>
-          <label class="option" data-question="q15" data-value="c">
-            <input type="radio" name="q15" value="c">
-            <span class="option-content">Para confundir al público.</span>
-          </label>
-          <button class="hint-btn" data-hint="q15" disabled>💡</button>
-          <p class="hint-text" id="hint-q15"></p>
+          <div class="question-inner">
+            <p><span class="question-number">16</span>¿Cómo estructurarías el cuerpo de un informativo con 3 ideas?</p>
+            <label class="option" data-question="q16" data-value="a">
+              <input type="radio" name="q16" value="a">
+              <span class="option-content">Tres ideas sin explicación.</span>
+            </label>
+            <label class="option" data-question="q16" data-value="b">
+              <input type="radio" name="q16" value="b">
+              <span class="option-content">Frase tema, explicación y transición para cada idea.</span>
+            </label>
+            <label class="option" data-question="q16" data-value="c">
+              <input type="radio" name="q16" value="c">
+              <span class="option-content">Solo datos sueltos.</span>
+            </label>
+            <button class="hint-btn" data-hint="q16" disabled>💡</button>
+            <p class="hint-text" id="hint-q16"></p>
+          </div>
         </div>
 
         <div class="question">
-          <p><span class="question-number">16</span>¿Cómo estructurarías el cuerpo de un informativo con 3 ideas?</p>
-          <label class="option" data-question="q16" data-value="a">
-            <input type="radio" name="q16" value="a">
-            <span class="option-content">Tres ideas sin explicación.</span>
-          </label>
-          <label class="option" data-question="q16" data-value="b">
-            <input type="radio" name="q16" value="b">
-            <span class="option-content">Frase tema, explicación y transición para cada idea.</span>
-          </label>
-          <label class="option" data-question="q16" data-value="c">
-            <input type="radio" name="q16" value="c">
-            <span class="option-content">Solo datos sueltos.</span>
-          </label>
-          <button class="hint-btn" data-hint="q16" disabled>💡</button>
-          <p class="hint-text" id="hint-q16"></p>
+          <div class="question-inner">
+            <p><span class="question-number">17</span>¿Qué evidencia usarías con un público escéptico?</p>
+            <label class="option" data-question="q17" data-value="a">
+              <input type="radio" name="q17" value="a">
+              <span class="option-content">Opiniones sin fuente.</span>
+            </label>
+            <label class="option" data-question="q17" data-value="b">
+              <input type="radio" name="q17" value="b">
+              <span class="option-content">Estadísticas confiables y testimonios de expertos.</span>
+            </label>
+            <label class="option" data-question="q17" data-value="c">
+              <input type="radio" name="q17" value="c">
+              <span class="option-content">Chismes y rumores.</span>
+            </label>
+            <button class="hint-btn" data-hint="q17" disabled>💡</button>
+            <p class="hint-text" id="hint-q17"></p>
+          </div>
         </div>
 
         <div class="question">
-          <p><span class="question-number">17</span>¿Qué evidencia usarías con un público escéptico?</p>
-          <label class="option" data-question="q17" data-value="a">
-            <input type="radio" name="q17" value="a">
-            <span class="option-content">Opiniones sin fuente.</span>
-          </label>
-          <label class="option" data-question="q17" data-value="b">
-            <input type="radio" name="q17" value="b">
-            <span class="option-content">Estadísticas confiables y testimonios de expertos.</span>
-          </label>
-          <label class="option" data-question="q17" data-value="c">
-            <input type="radio" name="q17" value="c">
-            <span class="option-content">Chismes y rumores.</span>
-          </label>
-          <button class="hint-btn" data-hint="q17" disabled>💡</button>
-          <p class="hint-text" id="hint-q17"></p>
+          <div class="question-inner">
+            <p><span class="question-number">18</span>Recomendación para cerrar un discurso memorable:</p>
+            <label class="option" data-question="q18" data-value="a">
+              <input type="radio" name="q18" value="a">
+              <span class="option-content">Terminar sin conclusión.</span>
+            </label>
+            <label class="option" data-question="q18" data-value="b">
+              <input type="radio" name="q18" value="b">
+              <span class="option-content">Llamada a la acción y frase contundente.</span>
+            </label>
+            <label class="option" data-question="q18" data-value="c">
+              <input type="radio" name="q18" value="c">
+              <span class="option-content">Repetir la introducción palabra por palabra.</span>
+            </label>
+            <button class="hint-btn" data-hint="q18" disabled>💡</button>
+            <p class="hint-text" id="hint-q18"></p>
+          </div>
         </div>
 
         <div class="question">
-          <p><span class="question-number">18</span>Recomendación para cerrar un discurso memorable:</p>
-          <label class="option" data-question="q18" data-value="a">
-            <input type="radio" name="q18" value="a">
-            <span class="option-content">Terminar sin conclusión.</span>
-          </label>
-          <label class="option" data-question="q18" data-value="b">
-            <input type="radio" name="q18" value="b">
-            <span class="option-content">Llamada a la acción y frase contundente.</span>
-          </label>
-          <label class="option" data-question="q18" data-value="c">
-            <input type="radio" name="q18" value="c">
-            <span class="option-content">Repetir la introducción palabra por palabra.</span>
-          </label>
-          <button class="hint-btn" data-hint="q18" disabled>💡</button>
-          <p class="hint-text" id="hint-q18"></p>
+          <div class="question-inner">
+            <p><span class="question-number">19</span>Error frecuente y solución: abrumar con info →</p>
+            <label class="option" data-question="q19" data-value="a">
+              <input type="radio" name="q19" value="a">
+              <span class="option-content">Seguir agregando más datos.</span>
+            </label>
+            <label class="option" data-question="q19" data-value="b">
+              <input type="radio" name="q19" value="b">
+              <span class="option-content">Limitarse a 2–4 ideas principales.</span>
+            </label>
+            <label class="option" data-question="q19" data-value="c">
+              <input type="radio" name="q19" value="c">
+              <span class="option-content">Cambiar de tema cada minuto.</span>
+            </label>
+            <button class="hint-btn" data-hint="q19" disabled>💡</button>
+            <p class="hint-text" id="hint-q19"></p>
+          </div>
         </div>
 
         <div class="question">
-          <p><span class="question-number">19</span>Error frecuente y solución: abrumar con info →</p>
-          <label class="option" data-question="q19" data-value="a">
-            <input type="radio" name="q19" value="a">
-            <span class="option-content">Seguir agregando más datos.</span>
-          </label>
-          <label class="option" data-question="q19" data-value="b">
-            <input type="radio" name="q19" value="b">
-            <span class="option-content">Limitarse a 2–4 ideas principales.</span>
-          </label>
-          <label class="option" data-question="q19" data-value="c">
-            <input type="radio" name="q19" value="c">
-            <span class="option-content">Cambiar de tema cada minuto.</span>
-          </label>
-          <button class="hint-btn" data-hint="q19" disabled>💡</button>
-          <p class="hint-text" id="hint-q19"></p>
-        </div>
-
-        <div class="question">
-          <p><span class="question-number">20</span>Llamada a la acción ideal para reciclaje (una línea):</p>
-          <label class="option" data-question="q20" data-value="a">
-            <input type="radio" name="q20" value="a">
-            <span class="option-content">“No importa, no hagas nada.”</span>
-          </label>
-          <label class="option" data-question="q20" data-value="b">
-            <input type="radio" name="q20" value="b">
-            <span class="option-content">“Empieza hoy: separa tus residuos y llévalos al centro.”</span>
-          </label>
-          <label class="option" data-question="q20" data-value="c">
-            <input type="radio" name="q20" value="c">
-            <span class="option-content">“Reciclar es opcional siempre.”</span>
-          </label>
-          <button class="hint-btn" data-hint="q20" disabled>💡</button>
-          <p class="hint-text" id="hint-q20"></p>
+          <div class="question-inner">
+            <p><span class="question-number">20</span>Llamada a la acción ideal para reciclaje (una línea):</p>
+            <label class="option" data-question="q20" data-value="a">
+              <input type="radio" name="q20" value="a">
+              <span class="option-content">“No importa, no hagas nada.”</span>
+            </label>
+            <label class="option" data-question="q20" data-value="b">
+              <input type="radio" name="q20" value="b">
+              <span class="option-content">“Empieza hoy: separa tus residuos y llévalos al centro.”</span>
+            </label>
+            <label class="option" data-question="q20" data-value="c">
+              <input type="radio" name="q20" value="c">
+              <span class="option-content">“Reciclar es opcional siempre.”</span>
+            </label>
+            <button class="hint-btn" data-hint="q20" disabled>💡</button>
+            <p class="hint-text" id="hint-q20"></p>
+          </div>
         </div>
         
       </form>
