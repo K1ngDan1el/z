@@ -1,0 +1,205 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Footer from '../components/Footer.astro';
+---
+
+
+<Layout>
+  <Header />
+  
+  <main class="repaso-container">
+    
+    <h1 class="discurso" style="margin-top: 0;">TUTORIAL Y REPASO</h1>
+
+    <div class="grid-layout">
+      
+      <section class="glass-panel game-rules">
+        <h2>🎮 CÓMO JUGAR</h2>
+        <ul class="rules-list">
+          <li>
+            <span class="icon">⏱️</span>
+            <div class="rule-text">
+              <strong>Tiempo Límite:</strong> Tienes siete minutos en total.
+            </div>
+          </li>
+          <li>
+            <span class="icon">🎁</span>
+            <div class="rule-text">
+              <strong>Bonus de Tiempo:</strong> ¡Cada acierto te regala <strong>+10 segundos</strong>!
+            </div>
+          </li>
+          <li>
+            <span class="icon">💡</span>
+            <div class="rule-text">
+              <strong>Pistas:</strong> Se desbloquean cuando te queda la mitad del tiempo.
+            </div>
+          </li>
+          <li>
+            <span class="icon">🏆</span>
+            <div class="rule-text">
+              <strong>Meta:</strong> Necesitas un 60% para aprobar.
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="glass-panel study-guide">
+        <h2>📚 REPASO RÁPIDO: EL DISCURSO</h2>
+        
+        <div class="topic">
+          <h3>1. Definición y Propósito</h3>
+          <p>Es un enunciado con intención comunicativa. Sus fines son: <strong>Social</strong> (convivencia), <strong>Informativo</strong> (datos) y <strong>Persuasivo</strong> (mover a la acción).</p>
+        </div>
+
+        <div class="topic">
+          <h3>2. Estructura Básica</h3>
+          <ul>
+            <li><strong>Introducción:</strong> Capta la atención (anécdota, pregunta, cita).</li>
+            <li><strong>Desarrollo:</strong> Explica el tema (secuencia lógica).</li>
+            <li><strong>Conclusión:</strong> Cierre fuerte, resumen o llamada a la acción.</li>
+          </ul>
+        </div>
+
+        <div class="topic">
+          <h3>3. Persuasión y Ética</h3>
+          <p><strong>Aristóteles:</strong> El "buen hombre" usa la palabra para alentar, no manipular. <br>
+          <strong>Secuencia de Monroe:</strong> Atención → Necesidad → Satisfacción → Visualización → Acción.</p>
+        </div>
+
+        <div class="topic">
+          <h3>4. Conceptos Clave</h3>
+          <p><strong>Experiencia Vicaria:</strong> Vivir algo a través de la narración de otro.<br>
+          <strong>Imágenes Verbales:</strong> Describir usando los 5 sentidos.</p>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="action-area">
+      <p class="ready-text">¿Listo?</p>
+      <a class="boton-primario" href="/QUIZ/quiz1">COMENZAR QUIZ</a>
+    </div>
+
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  /* Estilos específicos para esta página */
+  .repaso-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+
+  .grid-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .grid-layout {
+      grid-template-columns: 1fr 1fr; /* Dos columnas en escritorio */
+      align-items: start;
+    }
+  }
+
+  /* Paneles estilo cristal (mismo estilo que tu timer) */
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 30px;
+    border: 4px solid rgba(255, 255, 255, 0.2); /* Borde pixelado grueso */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    color: #333;
+  }
+
+  h2 {
+    font-family: 'PixelifySans', monospace;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #b47b00; /* Color dorado oscuro acorde a tus botones */
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px rgba(255,255,255,0.5);
+    border-bottom: 4px solid #b47b00;
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #d35400;
+    font-weight: bold;
+  }
+
+  p, li {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  /* Estilos para la lista de reglas */
+  .rules-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .rules-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border: 2px solid #fff;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+    margin-right: 15px;
+  }
+
+  /* Área de repaso */
+  .topic {
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 15px;
+    border-left: 6px solid #28a745; /* Borde verde acorde al timer */
+  }
+
+  /* Área del botón */
+  .action-area {
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .ready-text {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 0 #fff;
+    animation: parpadeo 1.5s infinite;
+  }
+
+  @keyframes parpadeo {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.05); }
+  }
+
+  .boton-primario {
+    font-size: 2rem; /* Botón más grande para empezar */
+    padding: 20px 40px;
+    display: inline-block;
+  }
+</style>

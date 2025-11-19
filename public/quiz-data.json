@@ -1,222 +1,442 @@
 [
   {
     "id": "q1",
-    "question": "¿Qué se entiende por “discurso”?",
-    "hint": "La respuesta menciona 'intención comunicativa'.",
-    "correctAnswer": "c",
+    "question": "Según la RAE, ¿qué es el discurso como acto de la facultad discursiva?",
+    "hint": "Tiene que ver con inferir cosas y sacar consecuencias.",
+    "correctAnswer": "b",
     "options": [
-      { "value": "a", "text": "Un listado de instrucciones." },
-      { "value": "b", "text": "Una conversación privada." },
-      { "value": "c", "text": "Un enunciado con intención comunicativa." }
+      { "value": "a", "text": "Un monólogo teatral." },
+      { "value": "b", "text": "La facultad racional con que se infieren unas cosas de otras." },
+      { "value": "c", "text": "Una conversación informal entre amigos." }
     ]
   },
   {
     "id": "q2",
-    "question": "Menciona tres fines principales de un discurso.",
-    "hint": "Son los tres propósitos clásicos de la oratoria.",
-    "correctAnswer": "b",
+    "question": "Socialmente, ¿cuál es el concepto más generalizado de discurso?",
+    "hint": "Involucra a una persona hablando frente a un público.",
+    "correctAnswer": "a",
     "options": [
-      { "value": "a", "text": "Recitar, improvisar, silenciar." },
-      { "value": "b", "text": "Social, informativo, persuasivo." },
-      { "value": "c", "text": "Escribir, leer, olvidar." }
+      { "value": "a", "text": "Mensaje previamente preparado y leído frente a una audiencia." },
+      { "value": "b", "text": "Cualquier texto escrito en un libro." },
+      { "value": "c", "text": "Un debate político improvisado." }
     ]
   },
   {
     "id": "q3",
-    "question": "¿Cuáles son las tres partes básicas de la estructura de un discurso?",
-    "hint": "No es 'inicio, mitad, final', eso es muy simple.",
+    "question": "¿Cuáles son los tres grandes tipos de fines del discurso mencionados?",
+    "hint": "Piensa en socializar, aprender y mover a la acción.",
     "correctAnswer": "c",
     "options": [
-      { "value": "a", "text": "Inicio, mitad, final." },
-      { "value": "b", "text": "Presentación, ejemplos, preguntas." },
-      { "value": "c", "text": "Introducción, desarrollo, conclusión." }
+      { "value": "a", "text": "Político, Religioso, Académico." },
+      { "value": "b", "text": "Escrito, Oral, Mixto." },
+      { "value": "c", "text": "Sociales, Informativo, Motivación/Persuasión." }
     ]
   },
   {
     "id": "q4",
-    "question": "Da dos técnicas efectivas para captar la atención en la introducción.",
-    "hint": "Una es personal (anécdota) y la otra es una pregunta al aire.",
+    "question": "¿Cuál es el objetivo principal del discurso para fines sociales?",
+    "hint": "Se trata de llevarse bien con los demás.",
     "correctAnswer": "b",
     "options": [
-      { "value": "a", "text": "Leer un índice y enumerar." },
-      { "value": "b", "text": "Contar una anécdota y hacer una pregunta retórica." },
-      { "value": "c", "text": "Hablar en voz baja y mirar al techo." }
+      { "value": "a", "text": "Vender un producto." },
+      { "value": "b", "text": "Reforzar la sociabilidad y la convivencia." },
+      { "value": "c", "text": "Explicar un proceso técnico." }
     ]
   },
   {
     "id": "q5",
-    "question": "¿Qué es la “experiencia vicaria”?",
-    "hint": "Viene de 'vicario', que significa 'en lugar de otro'. Es sentir lo que otro siente.",
-    "correctAnswer": "b",
+    "question": "¿Qué es la 'experiencia vicaria'?",
+    "hint": "Es vivir algo a través de otro.",
+    "correctAnswer": "a",
     "options": [
-      { "value": "a", "text": "Explicar procesos largos." },
-      { "value": "b", "text": "Hacer que la audiencia imagine sensaciones." },
-      { "value": "c", "text": "Repetir citas textuales." }
+      { "value": "a", "text": "Experimentar un hecho escuchando la narración de otro." },
+      { "value": "b", "text": "Viajar físicamente a otro lugar." },
+      { "value": "c", "text": "Inventar una historia de ficción." }
     ]
   },
   {
     "id": "q6",
-    "question": "Verdadero o falso: un discurso informativo debe priorizar la objetividad.",
-    "hint": "Si quieres informar, no debes dar tu opinión personal.",
-    "correctAnswer": "b",
+    "question": "¿Qué habilidad del orador permite al público 'ver' lo que se narra?",
+    "hint": "Se relaciona con los cinco sentidos.",
+    "correctAnswer": "c",
     "options": [
-      { "value": "a", "text": "Falso." },
-      { "value": "b", "text": "Verdadero." },
-      { "value": "c", "text": "Siempre persuasivo." }
+      { "value": "a", "text": "La dicción perfecta." },
+      { "value": "b", "text": "El volumen de voz." },
+      { "value": "c", "text": "La creación de imágenes verbales." }
     ]
   },
   {
     "id": "q7",
-    "question": "¿Cuál es el orden de la secuencia motivadora de Monroe?",
-    "hint": "Todo empieza por... ¡llamar la...",
+    "question": "¿Cuál es la diferencia entre 'Elogio' y 'Discurso de Alabanza'?",
+    "hint": "La diferencia está en si la persona vive o ha fallecido.",
     "correctAnswer": "b",
     "options": [
-      { "value": "a", "text": "Necesidad → Acción → Atención → Visualización → Satisfacción." },
-      { "value": "b", "text": "Atención → Necesidad → Satisfacción → Visualización → Acción." },
-      { "value": "c", "text": "Acción → Atención → Satisfacción → Necesidad → Visualización." }
+      { "value": "a", "text": "Son exactamente lo mismo." },
+      { "value": "b", "text": "El elogio es para fallecidos, la alabanza para vivos." },
+      { "value": "c", "text": "El elogio es para vivos, la alabanza para fallecidos." }
     ]
   },
   {
     "id": "q8",
-    "question": "¿Qué elementos debes analizar sobre el público?",
-    "hint": "Necesitas saber a quién le hablas: edad, cultura, y qué piensan.",
-    "correctAnswer": "b",
+    "question": "¿Qué busca estimular un discurso de inspiración?",
+    "hint": "Sentimientos nobles como el patriotismo.",
+    "correctAnswer": "a",
     "options": [
-      { "value": "a", "text": "Solo su edad." },
-      { "value": "b", "text": "Demografía, conocimiento, actitudes." },
-      { "value": "c", "text": "El color de su ropa." }
+      { "value": "a", "text": "Sentimientos de lealtad, orgullo o patriotismo." },
+      { "value": "b", "text": "El deseo de comprar algo." },
+      { "value": "c", "text": "La risa y el entretenimiento puro." }
     ]
   },
   {
     "id": "q9",
-    "question": "Nombra un tipo de discurso para “ocasiones especiales”.",
-    "hint": "Uno que se da en un funeral, una boda o una celebración.",
-    "correctAnswer": "b",
+    "question": "¿Qué caracteriza a un discurso de cortesía?",
+    "hint": "No debe ser largo ni aburrido.",
+    "correctAnswer": "c",
     "options": [
-      { "value": "a", "text": "Instructivo técnico." },
-      { "value": "b", "text": "Elogio." },
-      { "value": "c", "text": "Informe contable." }
+      { "value": "a", "text": "Dura más de una hora." },
+      { "value": "b", "text": "Es complejo y técnico." },
+      { "value": "c", "text": "Es breve, sincero y a veces con humor." }
     ]
   },
   {
     "id": "q10",
-    "question": "¿Diferencia principal entre persuasivo e informativo?",
-    "hint": "La respuesta está literalmente en las dos palabras.",
-    "correctAnswer": "a",
+    "question": "Para la improvisación, ¿qué se recomienda hacer al terminar?",
+    "hint": "No te quedes ahí parado divagando.",
+    "correctAnswer": "b",
     "options": [
-      { "value": "a", "text": "El persuasivo busca convencer; el informativo busca informar." },
-      { "value": "b", "text": "El informativo es siempre más corto." },
-      { "value": "c", "text": "No hay diferencia." }
+      { "value": "a", "text": "Repetir todo de nuevo." },
+      { "value": "b", "text": "Sentarse cuando ya no se tenga nada más que añadir." },
+      { "value": "c", "text": "Pedir disculpas por hablar." }
     ]
   },
   {
     "id": "q11",
-    "question": "Ejemplo de gancho para entretenimiento:",
-    "hint": "¿Qué frase suena más como el inicio de una historia divertida?",
-    "correctAnswer": "b",
+    "question": "¿Qué busca principalmente el discurso informativo?",
+    "hint": "Lo opuesto a la subjetividad.",
+    "correctAnswer": "a",
     "options": [
-      { "value": "a", "text": "“Aquí van mis diapositivas.”" },
-      { "value": "b", "text": "“¿Se acuerdan de la vez que todo salió mal…?”" },
-      { "value": "c", "text": "“Lista de referencias al final.”" }
+      { "value": "a", "text": "La objetividad al ofrecer datos." },
+      { "value": "b", "text": "Convencer emocionalmente." },
+      { "value": "c", "text": "Hacer reír al público." }
     ]
   },
   {
     "id": "q12",
-    "question": "¿Qué papel tiene la ética en la persuasión?",
-    "hint": "Persuadir no es lo mismo que manipular.",
+    "question": "¿Cuándo es apropiado usar el discurso de explicación?",
+    "hint": "Cuando hablas de cómo funciona algo o un proceso.",
     "correctAnswer": "b",
     "options": [
-      { "value": "a", "text": "Permite manipular con eficacia." },
-      { "value": "b", "text": "Obliga a ser honesto y responsable." },
-      { "value": "c", "text": "Se ignora siempre." }
+      { "value": "a", "text": "Para describir un paisaje estático." },
+      { "value": "b", "text": "Cuando la información involucra un proceso (natural o artificial)." },
+      { "value": "c", "text": "Para dar la bienvenida a alguien." }
     ]
   },
   {
     "id": "q13",
-    "question": "Verdadero o falso: la improvisación no necesita preparación.",
-    "hint": "Incluso la 'improvisación' requiere conocer el tema y tener una estructura mental.",
-    "correctAnswer": "b",
+    "question": "¿Qué busca el discurso de descripción?",
+    "hint": "Que el receptor reconstruya una imagen en su mente.",
+    "correctAnswer": "c",
     "options": [
-      { "value": "a", "text": "Verdadero." },
-      { "value": "b", "text": "Falso." },
-      { "value": "c", "text": "Solo si hay micrófono." }
+      { "value": "a", "text": "Explicar pasos lógicos." },
+      { "value": "b", "text": "Definir palabras complejas." },
+      { "value": "c", "text": "Que el público visualice el objeto, persona o evento." }
     ]
   },
   {
     "id": "q14",
-    "question": "Menciona una consideración logística a revisar antes de dar un discurso.",
-    "hint": "¿Qué pasaría si llegas y no te oyen o no pueden ver tu presentación?",
+    "question": "En la descripción, ¿qué es el componente connotativo?",
+    "hint": "Lo contrario a los hechos objetivos.",
     "correctAnswer": "b",
     "options": [
-      { "value": "a", "text": "El menú del almuerzo." },
-      { "value": "b", "text": "Equipo técnico (micrófono/proyector)." },
-      { "value": "c", "text": "La lista de invitados." }
+      { "value": "a", "text": "La descripción objetiva basada en hechos." },
+      { "value": "b", "text": "La descripción subjetiva (sentimientos/opiniones)." },
+      { "value": "c", "text": "La medida exacta del objeto." }
     ]
   },
   {
     "id": "q15",
-    "question": "¿Por qué crear imágenes verbales?",
-    "hint": "Hacer que la gente 'vea' lo que dices en su mente.",
-    "correctAnswer": "b",
+    "question": "¿Cuál es el objetivo del discurso de definición?",
+    "hint": "Aclarar qué significa algo.",
+    "correctAnswer": "a",
     "options": [
-      { "value": "a", "text": "Para alargar el discurso." },
-      { "value": "b", "text": "Para aumentar conexión y recuerdo." },
-      { "value": "c", "text": "Para confundir al público." }
+      { "value": "a", "text": "Que el público entienda el significado de un concepto." },
+      { "value": "b", "text": "Que el público compre un diccionario." },
+      { "value": "c", "text": "Narrar la historia de una palabra sin explicarla." }
     ]
   },
   {
     "id": "q16",
-    "question": "¿Cómo estructurarías el cuerpo de un informativo con 3 ideas?",
-    "hint": "Cada idea debe tener su propio mini-desarrollo.",
-    "correctAnswer": "b",
+    "question": "¿Qué forma de definición dice lo que NO es el concepto?",
+    "hint": "Su nombre lo indica, niega algo.",
+    "correctAnswer": "c",
     "options": [
-      { "value": "a", "text": "Tres ideas sin explicación." },
-      { "value": "b", "text": "Frase tema, explicación y transición para cada idea." },
-      { "value": "c", "text": "Solo datos sueltos." }
+      { "value": "a", "text": "Etimología." },
+      { "value": "b", "text": "Sinónimos." },
+      { "value": "c", "text": "Negación." }
     ]
   },
   {
     "id": "q17",
-    "question": "¿Qué evidencia usarías con un público escéptico?",
-    "hint": "Un público escéptico no cree en 'porque sí'. Necesitan datos duros.",
+    "question": "¿Qué requiere el orador para un discurso de exposición o conferencia?",
+    "hint": "No puedes hablar de lo que no sabes.",
     "correctAnswer": "b",
     "options": [
-      { "value": "a", "text": "Opiniones sin fuente." },
-      { "value": "b", "text": "Estadísticas confiables y testimonios de expertos." },
-      { "value": "c", "text": "Chismes y rumores." }
+      { "value": "a", "text": "Solo buena voz." },
+      { "value": "b", "text": "Investigación previa y convertirse en experto del tema." },
+      { "value": "c", "text": "Copiar un texto de internet." }
     ]
   },
   {
     "id": "q18",
-    "question": "Recomendación para cerrar un discurso memorable:",
-    "hint": "Debe terminar con fuerza, diciendo al público qué hacer ahora.",
-    "correctAnswer": "b",
+    "question": "¿Qué función del lenguaje utiliza el discurso para motivar a actuar?",
+    "hint": "Busca dirigir o llamar al oyente.",
+    "correctAnswer": "a",
     "options": [
-      { "value": "a", "text": "Terminar sin conclusión." },
-      { "value": "b", "text": "Llamada a la acción y frase contundente." },
-      { "value": "c", "text": "Repetir la introducción palabra por palabra." }
+      { "value": "a", "text": "Función apelativa o directiva." },
+      { "value": "b", "text": "Función poética." },
+      { "value": "c", "text": "Función metalingüística." }
     ]
   },
   {
     "id": "q19",
-    "question": "Error frecuente y solución: abrumar con info →",
-    "hint": "Menos es más. Elige solo tus puntos clave.",
+    "question": "¿Cómo se define la persuasión?",
+    "hint": "Es un intento consciente de cambiar algo en el otro.",
     "correctAnswer": "b",
     "options": [
-      { "value": "a", "text": "Seguir agregando más datos." },
-      { "value": "b", "text": "Limitarse a 2–4 ideas principales." },
-      { "value": "c", "text": "Cambiar de tema cada minuto." }
+      { "value": "a", "text": "Obligar a alguien a hacer algo." },
+      { "value": "b", "text": "Intento de formar, reformar o cambiar actitudes y conductas." },
+      { "value": "c", "text": "Informar datos fríos sin opinar." }
     ]
   },
   {
     "id": "q20",
-    "question": "Llamada a la acción ideal para reciclaje (una línea):",
-    "hint": "Una 'Llamada a la acción' debe ser directa y clara.",
+    "question": "¿Quién es el 'buen hombre' según Aristóteles?",
+    "hint": "Un líder que usa la palabra éticamente.",
+    "correctAnswer": "c",
+    "options": [
+      { "value": "a", "text": "Alguien que nunca habla en público." },
+      { "value": "b", "text": "Quien manipula para su propio beneficio." },
+      { "value": "c", "text": "Quien usa la persuasión para alentar a otros, no para manipular." }
+    ]
+  },
+  {
+    "id": "q21",
+    "question": "¿Cuáles son los 5 pasos de la Secuencia Motivadora?",
+    "hint": "Atención, Necesidad, Satisfacción, Visualización...",
     "correctAnswer": "b",
     "options": [
-      { "value": "a", "text": "“No importa, no hagas nada.”" },
-      { "value": "b", "text": "“Empieza hoy: separa tus residuos y llévalos al centro.”" },
-      { "value": "c", "text": "“Reciclar es opcional siempre.”" }
+      { "value": "a", "text": "Inicio, Desarrollo, Clímax, Desenlace, Fin." },
+      { "value": "b", "text": "Atención, Necesidad, Satisfacción, Visualización, Acción." },
+      { "value": "c", "text": "Saludo, Tesis, Argumento, Contraargumento, Cierre." }
+    ]
+  },
+  {
+    "id": "q22",
+    "question": "En la secuencia motivadora, ¿qué hace la 'Visualización'?",
+    "hint": "Muestra el futuro si se sigue el consejo.",
+    "correctAnswer": "a",
+    "options": [
+      { "value": "a", "text": "Referencia a los resultados o efectos de seguir la recomendación." },
+      { "value": "b", "text": "Pide que cierren los ojos." },
+      { "value": "c", "text": "Muestra una película." }
+    ]
+  },
+  {
+    "id": "q23",
+    "question": "¿Cuáles son las tres partes básicas de la estructura del discurso?",
+    "hint": "Lo de siempre: principio, medio y fin.",
+    "correctAnswer": "c",
+    "options": [
+      { "value": "a", "text": "Título, Resumen, Bibliografía." },
+      { "value": "b", "text": "Saludo, Cuerpo, Despedida." },
+      { "value": "c", "text": "Introducción, Desarrollo, Conclusión." }
+    ]
+  },
+  {
+    "id": "q24",
+    "question": "¿Cuál es una función clave de la introducción?",
+    "hint": "Si no logras esto, nadie te escuchará.",
+    "correctAnswer": "b",
+    "options": [
+      { "value": "a", "text": "Dar todos los detalles del tema." },
+      { "value": "b", "text": "Captar la atención del público." },
+      { "value": "c", "text": "Despedirse de la audiencia." }
+    ]
+  },
+  {
+    "id": "q25",
+    "question": "¿Qué es una pregunta retórica en la introducción?",
+    "hint": "Se lanza para reflexionar, no para contestar en voz alta.",
+    "correctAnswer": "a",
+    "options": [
+      { "value": "a", "text": "Preguntas para hacer reflexionar, no para ser respondidas." },
+      { "value": "b", "text": "Preguntas que el público debe gritar la respuesta." },
+      { "value": "c", "text": "Preguntas de examen." }
+    ]
+  },
+  {
+    "id": "q26",
+    "question": "¿Cuál es un error principal al concluir un discurso?",
+    "hint": "Dejar cosas a medias o cortar de golpe.",
+    "correctAnswer": "c",
+    "options": [
+      { "value": "a", "text": "Hacer un resumen." },
+      { "value": "b", "text": "Llamar a la acción." },
+      { "value": "c", "text": "Cortar abruptamente o iniciar una nueva idea." }
+    ]
+  },
+  {
+    "id": "q27",
+    "question": "¿Qué tipo de conclusión es ideal para un discurso persuasivo?",
+    "hint": "Requiere compromiso personal.",
+    "correctAnswer": "b",
+    "options": [
+      { "value": "a", "text": "Moraleja." },
+      { "value": "b", "text": "Intención personal de hacer algo o llamada a la acción." },
+      { "value": "c", "text": "Contar un chiste." }
+    ]
+  },
+  {
+    "id": "q28",
+    "question": "¿Cuáles son las etapas de la comunicación estratégica?",
+    "hint": "Planear, Organizar, Interactuar.",
+    "correctAnswer": "a",
+    "options": [
+      { "value": "a", "text": "Planeación, Organización, Interacción." },
+      { "value": "b", "text": "Escritura, Lectura, Habla." },
+      { "value": "c", "text": "Inicio, Medio, Final." }
+    ]
+  },
+  {
+    "id": "q29",
+    "question": "En la planeación, ¿qué define '¿A quién?'?",
+    "hint": "Estudiar a las personas que escuchan.",
+    "correctAnswer": "b",
+    "options": [
+      { "value": "a", "text": "El emisor." },
+      { "value": "b", "text": "El análisis del receptor." },
+      { "value": "c", "text": "El contexto." }
+    ]
+  },
+  {
+    "id": "q30",
+    "question": "¿Qué se debe considerar al seleccionar el tema?",
+    "hint": "Debe gustarle a dos partes.",
+    "correctAnswer": "c",
+    "options": [
+      { "value": "a", "text": "Solo lo que está de moda." },
+      { "value": "b", "text": "Solo lo que le gusta al orador." },
+      { "value": "c", "text": "El interés del público y del orador." }
+    ]
+  },
+  {
+    "id": "q31",
+    "question": "¿Qué es la 'información adquirida'?",
+    "hint": "Lo que ya traes en tu cabeza.",
+    "correctAnswer": "a",
+    "options": [
+      { "value": "a", "text": "Datos y recuerdos guardados en la memoria a largo plazo." },
+      { "value": "b", "text": "Lo que buscas en Google." },
+      { "value": "c", "text": "Lo que te inventas en el momento." }
+    ]
+  },
+  {
+    "id": "q32",
+    "question": "¿Qué es la 'información inmediata'?",
+    "hint": "La que tienes que salir a buscar.",
+    "correctAnswer": "b",
+    "options": [
+      { "value": "a", "text": "Lo que ya sabías." },
+      { "value": "b", "text": "La que investigas en libros o internet porque la desconoces." },
+      { "value": "c", "text": "Los chismes del pasillo." }
+    ]
+  },
+  {
+    "id": "q33",
+    "question": "¿Por qué es importante analizar el lugar de la exposición?",
+    "hint": "Para no llevarte sorpresas técnicas o de espacio.",
+    "correctAnswer": "a",
+    "options": [
+      { "value": "a", "text": "Para sentirse cómodo y prever problemas técnicos." },
+      { "value": "b", "text": "Para saber dónde comer después." },
+      { "value": "c", "text": "Para cobrar más caro." }
+    ]
+  },
+  {
+    "id": "q34",
+    "question": "¿Cómo influye la hora del día en el discurso?",
+    "hint": "Afecta la energía y el hambre de la gente.",
+    "correctAnswer": "b",
+    "options": [
+      { "value": "a", "text": "No influye en nada." },
+      { "value": "b", "text": "Afecta el ánimo y disposición de la audiencia." },
+      { "value": "c", "text": "Cambia el idioma del discurso." }
+    ]
+  },
+  {
+    "id": "q35",
+    "question": "¿Qué factores incluye el análisis demográfico del receptor?",
+    "hint": "Datos estadísticos de la población.",
+    "correctAnswer": "c",
+    "options": [
+      { "value": "a", "text": "Sus miedos y traumas." },
+      { "value": "b", "text": "Sus opiniones políticas." },
+      { "value": "c", "text": "Edad, género, educación, grupo social." }
+    ]
+  },
+  {
+    "id": "q36",
+    "question": "¿Qué evalúa el análisis de actitudes del receptor?",
+    "hint": "Lo que creen y valoran.",
+    "correctAnswer": "a",
+    "options": [
+      { "value": "a", "text": "Creencias, valores y reacción ante el tema." },
+      { "value": "b", "text": "Su estatura y peso." },
+      { "value": "c", "text": "Su nivel económico exclusivamente." }
+    ]
+  },
+  {
+    "id": "q37",
+    "question": "¿En qué se enfoca el análisis psicológico?",
+    "hint": "Lo que hay dentro de la mente y conducta.",
+    "correctAnswer": "b",
+    "options": [
+      { "value": "a", "text": "En el lugar de nacimiento." },
+      { "value": "b", "text": "En el pensamiento o conducta de los receptores." },
+      { "value": "c", "text": "En su ropa." }
+    ]
+  },
+  {
+    "id": "q38",
+    "question": "¿Qué tipo de discurso usa 'Plectognatos' como ejemplo en el texto?",
+    "hint": "Estaba clasificando peces.",
+    "correctAnswer": "c",
+    "options": [
+      { "value": "a", "text": "Discurso de motivación." },
+      { "value": "b", "text": "Discurso de entretenimiento." },
+      { "value": "c", "text": "Discurso informativo de definición." }
+    ]
+  },
+  {
+    "id": "q39",
+    "question": "¿Qué se recomienda para una introducción con 'Referencia personal'?",
+    "hint": "Hablar de uno mismo para ganar confianza.",
+    "correctAnswer": "a",
+    "options": [
+      { "value": "a", "text": "Contar algo propio para mejorar la credibilidad." },
+      { "value": "b", "text": "Presumir logros irrelevantes." },
+      { "value": "c", "text": "Quejarse del clima." }
+    ]
+  },
+  {
+    "id": "q40",
+    "question": "¿Cuál es el propósito del 'Discurso de buena voluntad'?",
+    "hint": "Mejorar la imagen de una empresa.",
+    "correctAnswer": "b",
+    "options": [
+      { "value": "a", "text": "Vender acciones." },
+      { "value": "b", "text": "Lograr una imagen positiva de una organización." },
+      { "value": "c", "text": "Despedir empleados." }
     ]
   }
 ]
